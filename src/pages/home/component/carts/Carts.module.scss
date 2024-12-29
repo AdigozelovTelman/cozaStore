@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+
+    .cart {
+        width: 30%;
+        display: flex;
+        border: 1px solid black;
+
+        .cartText {
+            display: flex;
+            flex-direction: column;
+            line-height: 0;
+            h5 {
+                font-size: 28px;
+                font-family: "Poppins-Bold", sans-serif;
+            }
+            
+            span {
+                font-size: 14px;
+                font-family: "Poppins-Regular", sans-serif;
+                color: #555;
+                padding-bottom: 60px;
+            }
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+
+            img {
+                width: 100%;
+
+            }
+        }
+    }
+}
+@media (max-width:576px) and (min-width:250px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 170vh;
+        .cart{
+            width: 80%;
+        }
+    }
+}

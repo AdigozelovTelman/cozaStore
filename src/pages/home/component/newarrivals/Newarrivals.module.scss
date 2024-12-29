@@ -1,0 +1,52 @@
+.container{
+    background: url('https://preview.colorlib.com/theme/cozastore/images/slide-03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .arrivalsText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: start;
+        width: 50%;
+        margin: 0 50px;
+        line-height: 20px;
+        span{
+            font-size: 28px;
+            font-family: "Poppins-Regular",sans-serif;
+            color: #333333;
+        }
+        h3{
+            font-size: 60px;
+            color: #333333;
+            font-weight: 500;
+            font-family: "PlayfairDisplay-Bold",sans-serif;
+        }
+        button{
+            font-size: 15px;
+            font-family: "Poppins-Medium",sans-serif;
+            width: 160px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: #857ACC;
+            color: white;
+        }
+    }
+
+}
+@media (max-width:576px) and (min-width:250px) {
+    .container{
+        .arrivalsText{
+            line-height: 55px;
+            span{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 40px;
+            }
+        }
+    }
+}

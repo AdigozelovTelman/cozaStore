@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+
+.account {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #222222;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+        height: 40px;
+        .free {
+            p {
+                color: #b2b2b2;
+                font-size: 12px;
+                font-family: Poppins-Regular,sans-serif;
+            }
+        }
+
+        .usd {
+            nav {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 30px;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #b2b2b2;
+                            font-size: 12px;
+                            font-family: "Poppins-Regular",sans-serif;
+                            border-right: 1px solid #b2b2b2;
+                            border-left: 1px solid #b2b2b2;
+                            padding: 10px  10px;
+                            letter-spacing: 2px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cozaStore{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+        height: 75px;
+        .logonavbar{
+            display: flex;
+            align-items: center;
+            .navbar{
+                nav{
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        gap: 20px;
+                        a{
+                            text-decoration: none;
+                            color: #8E9091;
+                            font-size: 14px;
+                            position: relative;
+                            font-family:"Poppins-Medium", sans-serif;
+                            span{
+                                position: absolute;
+                                background-color: #F74877;
+                                color: white;
+                                height: 15px;
+                                padding:0px  4px;
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 10px;
+                                top: -15px;
+                                right: -20px;
+                                font-size: 10px;
+                                font-family: Arial, sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            gap: 15px;
+            .hamburger{
+                display: none;
+            }
+            a{
+                position: relative;
+                color: #222222;
+                svg{
+                    font-size: 26px;
+                }
+             
+                span{
+                    position: absolute;
+                    background-color: #717fe0;
+                    color: white;
+                    height: 15px;
+                    padding:0px  4px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: -5px;
+                    right: -10px;
+                    font-size: 12px;
+                    font-family: Arial, sans-serif;
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px) and (min-width:250px) {
+    .account{
+        display: none;
+    }
+    .cozaStore{
+        .container{
+            .logonavbar{
+                .navbar{
+                    display: none;
+                }
+            }
+            .icons{
+                .hamburger{
+                    display: block;
+                }
+            }
+        }
+    }
+}

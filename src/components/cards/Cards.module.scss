@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .wishBtn{
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        cursor: pointer;
+        svg{
+            font-size: 20px;
+        }
+    }
+    .basketBtn{
+        width: 100%;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-color: #FF2143;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+        svg{
+            font-size: 22px;
+        }
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
